@@ -1,0 +1,23 @@
+{
+  "name": "superrecipes",
+  "version": "1.0.0",
+  "description": "Find recipes with an API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ugo",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PirateCool/Super-Recipes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PirateCool/Super-Recipes/issues"
+  },
+  "homepage": "https://github.com/PirateCool/Super-Recipes#readme"
+}
