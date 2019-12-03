@@ -31,10 +31,19 @@ const controlSearch = async () => {
 	}
 }
 
-document.querySelector('.search').addEventListener('submit', e => {
+// Submit search & prevent from refresh
+elements.searchForm.addEventListener('submit', e => {
 	e.preventDefault(); 
 	controlSearch();
+});
 
+elements.searchResPages.addEventListener('click', e => {
+	const btn = e.target.closest('.btn-inline');
+	if (btn) {
+		const goToPage = parseInt(btn.dataset.goto, 10);
+		searchView.clearResults();
+		searchView.renderResults(state.search.results, goToPage);
+	}
 });
 
 
