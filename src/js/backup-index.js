@@ -102,15 +102,10 @@ const controlRecipe = async () => {
 
 			// Render recipe on the UI
 			clearLoader();
-			if (!state.likes) {
-				recipeView.renderRecipe(
-				state.recipe);
-			} else {
-				recipeView.renderRecipe(
-				state.recipe, 
+			recipeView.renderRecipe(
+				state.recipe,
 				state.likes.isLiked(id)
 				);
-			}
 
 		} catch (err) {
 			console.log(err);
@@ -217,16 +212,6 @@ const controlLike = () => {
 ********************/
 
 
-// Restore liked recies when the page load
-window.addEventListener('load', () => {
- state.likes = new 	Likes()
- // read storage
- state.likes.readStorage(); 
- // toggle button 
- likesView.toggleLikeMenu(state.likes.getNumLikes());
- // render existings 
- state.likes.likes.forEach(like => likesView.renderLike(like));
-});
 
 // Handling recipe button clicks
 elements.recipe.addEventListener('click', e => {
@@ -250,7 +235,7 @@ elements.recipe.addEventListener('click', e => {
 	// console.log(state.recipe);
 })
 
-// window.l = new List();
+window.l = new List();
 
 
 
