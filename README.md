@@ -19,7 +19,7 @@ Find over 1,000,000 recipes & add the ingredients to your shopping list !
  - Fractional for numbers formating
  - UniqID for.. unique ids..
  - localStorage for.. local storage!
- - 
+
  
 # Made in 2 days to learn JS
 With the help of [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/)
